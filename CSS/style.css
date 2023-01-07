@@ -9,6 +9,7 @@ body{
 }
 
 .img-logo{
+    float: left;
     text-decoration: none;
     color: rgb(243, 249, 255);
     display: flex;
@@ -27,12 +28,10 @@ body{
 .navbar a {
     color: rgb(243, 249, 255);
     text-align: center;
-    padding-left: 1rem;
     text-decoration: none;
 }
-
-.navbar a:hover{
-
+.navbar a:visited {
+    background-color: aqua;
 }
 
 h1{
@@ -49,13 +48,13 @@ h1{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-.Logo:hover{
+.Logo{
     animation-name: spin;
-    animation: rotation 2s infinite;
+    animation: rotation infinite;
 }
 @keyframes spin{
     from {
-      transform: rotate(0deg);
+      transform: rotate(360deg);
     }
     to {
         transform: rotate(-360deg);
